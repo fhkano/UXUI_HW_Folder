@@ -52,9 +52,44 @@
 
 .flexContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.skillsBox{
+    width: 33%;
+    padding: 20px;
 }
 
 .magGlass{
     height: 40px;
+}
+
+.workPic{
+    width: 80%;
+    padding: 15px;
+}
+
+.myWork{
+    grid-area: myArea;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 600){
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workGrid{
+        display: grid;
+    }
+
+    .workPic{
+        width: 100%;
+        padding: 15px;
+    }
 }
